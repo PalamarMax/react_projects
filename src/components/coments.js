@@ -8,6 +8,8 @@ const Comments = () => {
             .then(value => setComments(value))
     })
 
+    console.log('test');
+
     return (
         <div>
             {comments.map(value => <div key={value.id}>{value.name}, {value.email}, {value.body}</div>)}
